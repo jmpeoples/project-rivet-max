@@ -4,10 +4,10 @@ import heroImage from '@/images/photos/heroshadowmammon.png'
 import Image from 'next/image'
 
 const navigation = [
-  { name: 'Product', href: '#' },
+  { name: 'Home', href: '#' },
+  { name: 'Story', href: '#' },
   { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'News', href: '#' },
 ]
 
 export default function Example() {
@@ -16,7 +16,10 @@ export default function Example() {
   return (
     <div className="bg-gray-900">
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <nav
+          className="flex items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -34,23 +37,29 @@ export default function Example() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-             
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-sm font-semibold leading-6 text-white"
+              >
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+          
           </div>
         </nav>
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <Dialog
+          as="div"
+          className="lg:hidden"
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+        >
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
@@ -68,7 +77,6 @@ export default function Example() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-               
               </button>
             </div>
             <div className="mt-6 flow-root">
@@ -99,12 +107,16 @@ export default function Example() {
       </header>
 
       <div className="relative isolate overflow-hidden pt-14">
-        <Image
-          src={heroImage}
-          alt=""
+        <video
+          src={
+            'https://res.cloudinary.com/dj1pyfkqr/video/upload/v1680283243/ShadowMammon_BG_final_agzzjh.mov'
+          }
+          autoplay="{true}"
+          loop
+          muted
           className="absolute inset-0 -z-10 h-full w-full object-cover"
-          height={'100%'}
-        />
+        ></video>
+
         <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
           <svg
             className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -132,7 +144,7 @@ export default function Example() {
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20 opacity-0">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 opacity-0 ring-1 ring-white/10 hover:ring-white/20">
               Announcing our next round of funding.{' '}
               <a href="#" className="font-semibold text-white">
                 <span className="absolute inset-0" aria-hidden="true" />
@@ -142,10 +154,11 @@ export default function Example() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                   SHADOW OF MAMMON
+              SHADOW OF MAMMON
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-            Explore a vibrant and beautiful world intertwined with dangers from an ancient war. 
+              Explore a vibrant and beautiful world intertwined with dangers
+              from an ancient war.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -154,7 +167,10 @@ export default function Example() {
               >
                 Get started
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-white">
+              <a
+                href="#"
+                className="text-sm font-semibold leading-6 text-white"
+              >
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

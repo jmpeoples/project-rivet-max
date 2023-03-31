@@ -7,21 +7,22 @@ const features = [
       description:
         `Explore the city of Belle Ombra and take on it's dark dungeons`,
       imageSrc: city,
-      imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
+      imageAlt: 'Explore',
+      local: true
     },
     {
       name: 'Fight',
       description:
         `Fight enemies with responsive combat, upgrade weapons and disover new equipment`,
-      imageSrc: city,
-      imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
+      imageSrc: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODRjZmY0NTIxMTEzZTVkNWM2YzU2YTc1YmIzYjZmOGJhNDk3YWFkMyZjdD1n/eVmiV2jWAiz3bX4zwD/giphy.gif',
+      imageAlt: 'fight demo',
     },
     {
       name: 'Solve',
       description:
         `Solve the mystery of the Plague of Shadows`,
-      imageSrc: city,
-      imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
+      imageSrc: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWI5MDY5YWZkY2M5ODk3NTdhY2MzYWFhOTU5ZGE4MjM1YjRmMGIyYSZjdD1n/PlTEGR3xJOCQdnUfij/giphy.gif',
+      imageAlt: 'Mystery photos',
     },
   
   ]
@@ -61,10 +62,12 @@ const features = [
                     featureIdx % 2 === 0 ? 'lg:col-start-6 xl:col-start-5' : 'lg:col-start-1',
                     'flex-auto lg:col-span-7 lg:row-start-1 xl:col-span-8'
                   )}
-                >
-                  <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100">
-                    <Image src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
-                  </div>
+                > {feature.local ?  <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100">
+                <Image src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
+              </div> : <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100">
+                <img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
+              </div> }
+                 
                 </div>
               </div>
             ))}
