@@ -1,32 +1,29 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
+import city from "../images/photos/BelleOmbra.jpeg"
+import Image from 'next/image'
+
 const features = [
     {
-      name: 'Minimal and thoughtful',
+      name: 'Explore',
       description:
-        'Our laptop sleeve is compact and precisely fits 13" devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-01.jpg',
+        `Explore the city of Belle Ombra and take on it's dark dungeons`,
+      imageSrc: city,
       imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
     },
     {
-      name: 'Refined details',
+      name: 'Fight',
       description:
-        'We design every detail with the best materials and finishes. This laptop sleeve features durable canvas with double-stitched construction, a felt interior, and a high quality zipper that hold up to daily use.',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-07-detail-02.jpg',
-      imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
+        `Fight enemies with responsive combat, upgrade weapons and disover new equipment`,
+      imageSrc: city,
+      imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
     },
+    {
+      name: 'Solve',
+      description:
+        `Solve the mystery of the Plague of Shadows`,
+      imageSrc: city,
+      imageAlt: 'White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull.',
+    },
+  
   ]
   
   function classNames(...classes) {
@@ -38,10 +35,9 @@ const features = [
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Protect your device</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Features</h2>
             <p className="mt-4 text-gray-500">
-              As a digital creative, your laptop or tablet is at the center of your work. Keep your device safe with a
-              fabric sleeve that matches in quality and looks.
+            A good challenge - Easy to pick up difficult to master. Enemies and hazards are more numerous as you progress
             </p>
           </div>
   
@@ -67,7 +63,7 @@ const features = [
                   )}
                 >
                   <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100">
-                    <img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
+                    <Image src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
                   </div>
                 </div>
               </div>
