@@ -1,29 +1,29 @@
-import { ChatBubbleOvalLeftEllipsisIcon, HeartIcon, PencilSquareIcon, TrashIcon } from '@heroicons/react/24/outline'
+import { ChatBubbleOvalLeftEllipsisIcon, HeartIcon, PencilSquareIcon, TrashIcon, LifebuoyIcon, ForwardIcon, ShieldCheckIcon, FireIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
     name: 'Primary Weapon',
     description:
       'Your first gift from the celestial guardians. It can be enhanced to hold many forms.',
-    icon: TrashIcon,
+    icon: FireIcon,
   },
   {
     name: 'Sprite Companion',
     description:
       'A support companion from the celestials. Use it to heal and launch long range attacks.',
-    icon: PencilSquareIcon,
+    icon: LifebuoyIcon,
   },
   {
     name: 'Secondary items',
     description:
       'Relics of the old war that can help tip the scales in your battle.',
-    icon: ChatBubbleOvalLeftEllipsisIcon,
+    icon: ShieldCheckIcon,
   },
   {
     name: 'Dash Belt',
     description:
       'Enables speed dash to evade enemies and cross hazards. Use it wisely, there is only so much your body can take.',
-    icon: HeartIcon,
+    icon: ForwardIcon,
   },
 ]
 
