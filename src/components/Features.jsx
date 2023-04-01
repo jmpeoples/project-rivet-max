@@ -5,7 +5,7 @@ const features = [
     {
       name: 'Explore',
       description:
-        `Explore the city of Belle Ombra and take on it's dark dungeons`,
+        `Explore the city of Belle Ombra and take on it's dark dungeons.`,
       imageSrc: city,
       imageAlt: 'Explore',
       local: true
@@ -13,14 +13,14 @@ const features = [
     {
       name: 'Fight',
       description:
-        `Fight enemies with responsive combat, upgrade weapons and disover new equipment`,
+        `Fight enemies with responsive combat, upgrade weapons and disover new equipment.`,
       imageSrc: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODRjZmY0NTIxMTEzZTVkNWM2YzU2YTc1YmIzYjZmOGJhNDk3YWFkMyZjdD1n/eVmiV2jWAiz3bX4zwD/giphy.gif',
       imageAlt: 'fight demo',
     },
     {
       name: 'Investigate',
       description:
-        `Solve the mystery of the Plague of Shadows`,
+        `Solve the mystery of the Plague of Shadows.`,
       imageSrc: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWI5MDY5YWZkY2M5ODk3NTdhY2MzYWFhOTU5ZGE4MjM1YjRmMGIyYSZjdD1n/PlTEGR3xJOCQdnUfij/giphy.gif',
       imageAlt: 'Mystery photos',
     },

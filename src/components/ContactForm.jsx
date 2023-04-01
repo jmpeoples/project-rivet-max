@@ -1,4 +1,19 @@
+import { toast } from "react-toastify";
+import { useState } from "react";
+import mixpanel from 'mixpanel-browser';
+
+// Replace YOUR_TOKEN with your Project Token
+mixpanel.init('0a55d25bf146ec68aee0b221ce8fb227', {debug: true}); 
+
+
+// Track an event. It can be anything, but in this example, we're tracking a Signed Up event.
+// Include a property about the signup, like the Signup Type
+
+
+
 export const ContactForm = () => {
+  const [isDisabled, setIsDisabled] = useState(false)
+
     const handleSubmit = async (e) => {
       e.preventDefault();
       const form = new FormData(e.target);
@@ -21,7 +36,9 @@ export const ContactForm = () => {
   
         if (response.ok) {
           // Hide your form
-          alert('message is sent');
+          toast('Welcome to Erleana', { hideProgressBar: true, autoClose: 2000, type: 'success' })
+          mixpanel.identify(formData.email)
+          setIsDisabled(true)
         } else {
           console.error(response);
           console.log(formData);
@@ -54,9 +71,11 @@ export const ContactForm = () => {
                 required
                 className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                 placeholder="Enter your email"
+                disabled={isDisabled}
               />
               <button
                 type="submit"
+                disabled={isDisabled}
                 className="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
               >
                 Subscribe
