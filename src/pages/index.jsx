@@ -237,7 +237,6 @@ export default function Home({ articles }) {
      <Story />
      <Features />
      <Mechanics />
-     <EmailForm />
      <ContactForm />
      <Footer />
      

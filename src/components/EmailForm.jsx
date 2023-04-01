@@ -20,13 +20,16 @@ export default function EmailForm() {
             <h2 className="inline sm:block lg:inline xl:block">Want game dev updates?</h2>{' '}
             <p className="inline sm:block lg:inline xl:block">Sign up for our newsletter.</p>
           </div>
-          <form className="w-full max-w-md lg:col-span-5 lg:pt-2">
+          <form 
+            className="w-full max-w-md lg:col-span-5 lg:pt-2"
+           
+          >
             <div className="flex gap-x-4">
               <label htmlFor="email-address" className="sr-only">
                 Email address
               </label>
               <input
-                id="email-address"
+                id="email"
                 name="email"
                 type="email"
                 autoComplete="email"
@@ -41,13 +44,6 @@ export default function EmailForm() {
                 Subscribe
               </button>
             </div>
-            <p className="mt-4 text-sm leading-6 text-gray-300">
-              We care about your data. Read our{' '}
-              <a href="#" className="font-semibold text-white">
-                privacy&nbsp;policy
-              </a>
-              .
-            </p>
           </form>
         </div>
       </div>
