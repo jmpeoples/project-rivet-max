@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import heroImage from '@/images/photos/heroshadowmammon.png'
 import Image from 'next/image'
+import SOMlogo from '@/images/logos/som_logo.svg'
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -24,9 +25,9 @@ export default function Example() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               
-              <img
+              <Image
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                src={SOMlogo}
                 alt=""
               />
             </a>
