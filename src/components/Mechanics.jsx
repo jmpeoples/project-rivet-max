@@ -4,32 +4,32 @@ const features = [
   {
     name: 'Primary Weapon',
     description:
-      'Autem reprehenderit aut debitis ut. Officiis harum omnis placeat blanditiis delectus sint vel et voluptatum. Labore asperiores non corporis molestiae.',
+      'Your first gift from the celestial guardians. It can be enhanced to hold many forms.',
     icon: TrashIcon,
   },
   {
     name: 'Sprite Companion',
     description:
-      'Illum et aut inventore. Ut et dignissimos quasi. Omnis saepe dolorum. Hic autem fugiat. Voluptatem officiis necessitatibus est.',
+      'A support companion from the celestials. Use it to heal and launch long range attacks.',
     icon: PencilSquareIcon,
   },
   {
     name: 'Secondary items',
     description:
-      'Commodi quam quo. In quasi mollitia optio voluptate et est reiciendis. Ut et sunt id officiis vitae perspiciatis. Et accusantium sapiente.',
+      'Relics of the old war that can help tip the scales in your battle.',
     icon: ChatBubbleOvalLeftEllipsisIcon,
   },
   {
     name: 'Dash Belt',
     description:
-      'Deserunt corrupti praesentium quo vel cupiditate est occaecati ad. Aperiam libero modi similique iure praesentium facilis quo cumque quibusdam.',
+      'Enables speed dash to evade enemies and cross hazards. Use it wisely, there is only so much your body can take.',
     icon: HeartIcon,
   },
 ]
 
 export default function Mechanics() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div id="Mechanics" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

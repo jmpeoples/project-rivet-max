@@ -18,7 +18,7 @@ const features = [
       imageAlt: 'fight demo',
     },
     {
-      name: 'Solve',
+      name: 'Investigate',
       description:
         `Solve the mystery of the Plague of Shadows`,
       imageSrc: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWI5MDY5YWZkY2M5ODk3NTdhY2MzYWFhOTU5ZGE4MjM1YjRmMGIyYSZjdD1n/PlTEGR3xJOCQdnUfij/giphy.gif',
@@ -33,7 +33,7 @@ const features = [
   
   export default function Features() {
     return (
-      <div className="bg-white">
+      <div id="Features" className="bg-white">
         <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Features</h2>
