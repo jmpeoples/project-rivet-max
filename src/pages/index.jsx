@@ -20,6 +20,7 @@ import Features from '@/components/Features'
 import Mechanics from '@/components/Mechanics'
 import EmailForm from '@/components/EmailForm'
 import Footer from '@/components/Footer'
+import { ContactForm } from '@/components/ContactForm'
 
 function MailIcon(props) {
   return (
@@ -225,6 +226,7 @@ export default function Home({ articles }) {
      <Features />
      <Mechanics />
      <EmailForm />
+     <ContactForm />
      <Footer />
      
     </>
