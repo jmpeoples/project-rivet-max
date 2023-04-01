@@ -120,7 +120,7 @@ export default function Example() {
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Explore a vibrant and beautiful world intertwined with dangers
-              from an ancient war.
+              from an ancient war. Shadow of Mammon is a fast paced Action RPG inspired by modern jrpgs.  
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
