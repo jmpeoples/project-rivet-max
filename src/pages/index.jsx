@@ -22,6 +22,18 @@ import EmailForm from '@/components/EmailForm'
 import Footer from '@/components/Footer'
 import { ContactForm } from '@/components/ContactForm'
 
+import mixpanel from 'mixpanel-browser';
+
+// Replace YOUR_TOKEN with your Project Token
+mixpanel.init('0a55d25bf146ec68aee0b221ce8fb227', {debug: true}); 
+
+
+// Track an event. It can be anything, but in this example, we're tracking a Signed Up event.
+// Include a property about the signup, like the Signup Type
+mixpanel.track('User Visit', {
+  'Visit Type': 'common',
+});
+
 function MailIcon(props) {
   return (
     <svg
