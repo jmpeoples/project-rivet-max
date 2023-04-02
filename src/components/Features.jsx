@@ -5,7 +5,7 @@ const features = [
     {
       name: 'Explore',
       description:
-        `Explore the city of Belle Ombra and take on it's dark dungeons.`,
+        `Explore the city of Belle Ombra and take on its dark dungeons.`,
       imageSrc: city,
       imageAlt: 'Explore',
       local: true
