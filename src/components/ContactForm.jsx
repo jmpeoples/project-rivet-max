@@ -58,7 +58,7 @@ export const ContactForm = () => {
         <p className="mt-4 text-yellow-500">Join our Discord</p>
         <div className="mt-8">
           <a
-            href="https://discord.com/channels/1102078773190471750/1104959850456297522"
+            href="https://discord.gg/fH6sKcaS6S"
             className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
           >
             Join Us
