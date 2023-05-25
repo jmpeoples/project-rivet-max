@@ -55,13 +55,15 @@ export const ContactForm = () => {
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Want game dev update?
         </h2>
-        <p className="mt-4 text-yellow-500">Join our Discord</p>
+        
         <div className="mt-8">
           <a
-            href="https://discord.gg/fH6sKcaS6S"
+            target='_blank'
+            rel="noreferrer"
+            href="https://twitter.com/sailingfox1"
             className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
           >
-            Join Us
+            Follow Me
           </a>
         </div>
       </div>
