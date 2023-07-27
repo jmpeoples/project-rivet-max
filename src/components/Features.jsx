@@ -13,7 +13,7 @@ const features = [
     {
       name: 'Fight',
       description:
-        `Fight enemies with responsive combat, upgrade weapons and disover new equipment.`,
+        `Fight enemies with responsive combat, upgrade weapons and discover new equipment.`,
       imageSrc: 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODRjZmY0NTIxMTEzZTVkNWM2YzU2YTc1YmIzYjZmOGJhNDk3YWFkMyZjdD1n/eVmiV2jWAiz3bX4zwD/giphy.gif',
       imageAlt: 'fight demo',
     },
