@@ -26,13 +26,7 @@ export default function Home({ }) {
   return (
     <>
      <ToastContainer />
-     <Hero />
-     <Story />
-     <Features />
-     <Mechanics />
-     <ContactForm />
-     <Footer />
-     
+     <Hero />     
     </>
   )
 }

@@ -33,17 +33,7 @@ export default function Example() {
             </a>
           </div>
         
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-sm font-semibold leading-6 text-white"
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
+      
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           
           </div>
@@ -54,7 +44,7 @@ export default function Example() {
       <div className="relative isolate overflow-hidden pt-14">
         <video
           src={
-            'https://res.cloudinary.com/dj1pyfkqr/video/upload/v1680283243/ShadowMammon_BG_final_agzzjh.mov'
+            'https://res.cloudinary.com/dj1pyfkqr/video/upload/v1714876172/SOM_Wishlist_movie_02_vkcgjd.mp4'
           }
           autoplay="{true}"
           loop
@@ -119,9 +109,9 @@ export default function Example() {
               SHADOW OF MAMMON
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Explore a vibrant and beautiful world intertwined with dangers
-              from an ancient war. Shadow of Mammon is a fast paced Action RPG inspired by modern jrpgs.  
+            Embark on a thrilling adventure in a forbidden land where your mission is to save your dying brother from a mysterious sickness. 
             </p>
+            <iframe src="https://embeds.beehiiv.com/6ff4ead4-c1a7-4767-81d2-225cf4430472" data-test-id="beehiiv-embed" width="100%" height="320" frameborder="0" scrolling="no" style={{borderRadius: "4px", border: "2px solid #e5e7eb", margin: "0", backgroundColor: "transparent"}}></iframe>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="https://store.steampowered.com/app/2491810/Shadow_of_Mammon/"
