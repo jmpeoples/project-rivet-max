@@ -44,7 +44,7 @@ export default function Example() {
       <div className="relative isolate overflow-hidden pt-14">
         <video
           src={
-            'https://res.cloudinary.com/dj1pyfkqr/video/upload/v1714876172/SOM_Wishlist_movie_02_vkcgjd.mp4'
+            'https://res.cloudinary.com/dj1pyfkqr/video/upload/v1729957158/SOM_Playtest_sn27ts.mp4'
           }
           autoplay="{true}"
           loop
@@ -109,7 +109,7 @@ export default function Example() {
               SHADOW OF MAMMON
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-            Embark on a thrilling adventure in a forbidden land where your mission is to save your dying brother from a mysterious sickness. 
+            Embark on a thrilling adventure in a forbidden land to save your dying brother from a mysterious sickness. Climb The Tower to find the ultimate cure.
             </p>
             <iframe src="https://embeds.beehiiv.com/6ff4ead4-c1a7-4767-81d2-225cf4430472" data-test-id="beehiiv-embed" width="100%" height="320" frameborder="0" scrolling="no" style={{borderRadius: "4px", border: "2px solid #e5e7eb", margin: "0", backgroundColor: "transparent"}}></iframe>
             <div className="mt-10 flex items-center justify-center gap-x-6">
